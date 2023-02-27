@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230226 12:06:28.465" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Administrator\.vscode\extensions\robocorp.robotframework-lsp-1.9.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Acessar a tela de login do site saucedemo.com">
+<msg timestamp="20230226 12:06:28.905" level="FAIL">No keyword with name 'Acessar a tela de login do site saucedemo.com' found.</msg>
+<status status="FAIL" starttime="20230226 12:06:28.904" endtime="20230226 12:06:28.905"/>
+</kw>
+<kw name="Realizar o login com o usuario e a senha">
+<status status="NOT RUN" starttime="20230226 12:06:28.906" endtime="20230226 12:06:28.906"/>
+</kw>
+<kw name="verificar se o titulo Swaglabs seja apresentado">
+<status status="NOT RUN" starttime="20230226 12:06:28.907" endtime="20230226 12:06:28.907"/>
+</kw>
+<kw name="Verificar se o titulo da pagina fica &quot;Swag Labs&quot;">
+<status status="NOT RUN" starttime="20230226 12:06:28.908" endtime="20230226 12:06:28.908"/>
+</kw>
+<kw name="Verificar que seja apresentado os produtos da loja">
+<status status="NOT RUN" starttime="20230226 12:06:28.908" endtime="20230226 12:06:28.909"/>
+</kw>
+<kw name="Adicionar no carrinho de compras o produto Sauce labs backpack">
+<status status="NOT RUN" starttime="20230226 12:06:28.910" endtime="20230226 12:06:28.910"/>
+</kw>
+<kw name="Clicar no carrinho para finalizar a compra">
+<status status="NOT RUN" starttime="20230226 12:06:28.911" endtime="20230226 12:06:28.911"/>
+</kw>
+<kw name="Verificar se o produto desejado esta no carrinho">
+<status status="NOT RUN" starttime="20230226 12:06:28.912" endtime="20230226 12:06:28.912"/>
+</kw>
+<kw name="clicar em checkout para poder dar continuidade a compra">
+<status status="NOT RUN" starttime="20230226 12:06:28.913" endtime="20230226 12:06:28.913"/>
+</kw>
+<kw name="Clicar na caixa de informação First Name e colocar seus dados">
+<status status="NOT RUN" starttime="20230226 12:06:28.913" endtime="20230226 12:06:28.913"/>
+</kw>
+<kw name="Verificar o Description">
+<status status="NOT RUN" starttime="20230226 12:06:28.914" endtime="20230226 12:06:28.914"/>
+</kw>
+<kw name="Verificar o Payment Information">
+<status status="NOT RUN" starttime="20230226 12:06:28.915" endtime="20230226 12:06:28.915"/>
+</kw>
+<kw name="verificar o Shipping Information">
+<status status="NOT RUN" starttime="20230226 12:06:28.916" endtime="20230226 12:06:28.916"/>
+</kw>
+<kw name="Verificar item total">
+<status status="NOT RUN" starttime="20230226 12:06:28.917" endtime="20230226 12:06:28.917"/>
+</kw>
+<kw name="Verificar Tax">
+<status status="NOT RUN" starttime="20230226 12:06:28.918" endtime="20230226 12:06:28.918"/>
+</kw>
+<kw name="Verificar total">
+<status status="NOT RUN" starttime="20230226 12:06:28.919" endtime="20230226 12:06:28.919"/>
+</kw>
+<kw name="Clicar em Finish">
+<status status="NOT RUN" starttime="20230226 12:06:28.920" endtime="20230226 12:06:28.920"/>
+</kw>
+<kw name="Verificar que seja apresentado checkout complete!">
+<status status="NOT RUN" starttime="20230226 12:06:28.921" endtime="20230226 12:06:28.921"/>
+</kw>
+<status status="PASS" starttime="20230226 12:06:28.481" endtime="20230226 12:06:43.403"/>
+</kw>
+<status status="PASS" starttime="20230226 12:06:28.481" endtime="20230226 12:06:43.403"/>
+</test>
+<status status="PASS" starttime="20230226 12:06:28.465" endtime="20230226 12:06:43.404"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

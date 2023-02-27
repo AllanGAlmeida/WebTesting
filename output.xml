@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230227 16:19:12.860" rpa="false" schemaversion="3">
+<suite id="s1" name="Saucedemo test" source="c:\Users\Administrator\Documents\Desafio Justa\RobotFramework\WebTesting\Saucedemo_test.robot">
+<test id="s1-t1" name="Caso de teste 01 - Eu, como Herói, desejo realizar a compra de camisa vermelha;" line="8">
+<kw name="Abrir o navegador" library="Saucedemo_resourses" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230227 16:19:13.053" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230227 16:19:13.053" endtime="20230227 16:19:14.206"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230227 16:19:14.206" endtime="20230227 16:19:14.327"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:13.052" endtime="20230227 16:19:14.327"/>
+</kw>
+<kw name="Acessar a tela de login do site saucedemo.com" library="Saucedemo_resourses">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230227 16:19:14.330" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20230227 16:19:14.329" endtime="20230227 16:19:14.484"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:14.485" endtime="20230227 16:19:14.516"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:14.328" endtime="20230227 16:19:14.516"/>
+</kw>
+<kw name="Realizar o login com o usuario e a senha" library="Saucedemo_resourses">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=user-name</arg>
+<arg>text=standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:14.518" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20230227 16:19:14.517" endtime="20230227 16:19:14.609"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=password</arg>
+<arg>text=secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:14.611" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20230227 16:19:14.610" endtime="20230227 16:19:14.697"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:14.698" level="INFO">Clicking element 'login-button'.</msg>
+<status status="PASS" starttime="20230227 16:19:14.698" endtime="20230227 16:19:14.793"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:14.517" endtime="20230227 16:19:14.794"/>
+</kw>
+<kw name="verificar se o titulo Swaglabs seja apresentado" library="Saucedemo_resourses">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${header_Swaglabs}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:14.795" endtime="20230227 16:19:14.821"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:14.794" endtime="20230227 16:19:14.821"/>
+</kw>
+<kw name="Verificar se o titulo da pagina fica &quot;Swag Labs&quot;" library="Saucedemo_resourses" sourcename="Verificar se o titulo da pagina fica &quot;${TITULO}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230227 16:19:14.825" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20230227 16:19:14.822" endtime="20230227 16:19:14.826"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:14.821" endtime="20230227 16:19:14.826"/>
+</kw>
+<kw name="Verificar que seja apresentado os produtos da loja" library="Saucedemo_resourses">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>locator=${inventory}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230227 16:19:14.828" endtime="20230227 16:19:14.837"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:14.827" endtime="20230227 16:19:14.837"/>
+</kw>
+<kw name=" Adicionar no carrinho de compras o produto Test.allTheThings() T-Shirt(Red)" library="Saucedemo_resourses">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[@alt='Test.allTheThings() T-Shirt (Red)']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:14.838" level="INFO">Clicking element '//img[@alt='Test.allTheThings() T-Shirt (Red)']'.</msg>
+<status status="PASS" starttime="20230227 16:19:14.838" endtime="20230227 16:19:14.913"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=add-to-cart-test.allthethings()-t-shirt-(red)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:14.914" level="INFO">Clicking element 'add-to-cart-test.allthethings()-t-shirt-(red)'.</msg>
+<status status="PASS" starttime="20230227 16:19:14.913" endtime="20230227 16:19:14.958"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:14.837" endtime="20230227 16:19:14.959"/>
+</kw>
+<kw name="Clicar no carrinho para finalizar a compra" library="Saucedemo_resourses">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[@class='shopping_cart_link'][contains(.,'1')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:14.961" level="INFO">Clicking element '//a[@class='shopping_cart_link'][contains(.,'1')]'.</msg>
+<status status="PASS" starttime="20230227 16:19:14.960" endtime="20230227 16:19:14.998"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:14.959" endtime="20230227 16:19:14.999"/>
+</kw>
+<kw name="Verificar se o produto desejado esta no carrinho" library="Saucedemo_resourses">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='cart_item'][contains(.,'1Test.allTheThings() T-Shirt (Red)This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.$15.99Remove')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:14.999" endtime="20230227 16:19:15.014"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:14.999" endtime="20230227 16:19:15.015"/>
+</kw>
+<kw name="clicar em checkout para poder dar continuidade a compra" library="Saucedemo_resourses">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=checkout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:15.016" level="INFO">Clicking element 'checkout'.</msg>
+<status status="PASS" starttime="20230227 16:19:15.015" endtime="20230227 16:19:15.055"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.015" endtime="20230227 16:19:15.056"/>
+</kw>
+<kw name="Clicar na caixa de informação First Name e colocar seus dados" library="Saucedemo_resourses">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=first-name</arg>
+<arg>text=Allan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:15.058" level="INFO">Typing text 'Allan' into text field 'first-name'.</msg>
+<status status="PASS" starttime="20230227 16:19:15.057" endtime="20230227 16:19:15.127"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=last-name</arg>
+<arg>text=Almeida</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:15.128" level="INFO">Typing text 'Almeida' into text field 'last-name'.</msg>
+<status status="PASS" starttime="20230227 16:19:15.128" endtime="20230227 16:19:15.197"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=postal-code</arg>
+<arg>text=06363420</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:15.198" level="INFO">Typing text '06363420' into text field 'postal-code'.</msg>
+<status status="PASS" starttime="20230227 16:19:15.197" endtime="20230227 16:19:15.270"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=continue</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:15.271" level="INFO">Clicking element 'continue'.</msg>
+<status status="PASS" starttime="20230227 16:19:15.270" endtime="20230227 16:19:15.317"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.056" endtime="20230227 16:19:15.317"/>
+</kw>
+<kw name="Verificar o Description" library="Saucedemo_resourses">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='cart_desc_label'][contains(.,'DESCRIPTION')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:15.318" endtime="20230227 16:19:15.334"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.318" endtime="20230227 16:19:15.334"/>
+</kw>
+<kw name="Verificar o Payment Information" library="Saucedemo_resourses">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='summary_info_label'][contains(.,'Payment Information:')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:15.335" endtime="20230227 16:19:15.351"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.335" endtime="20230227 16:19:15.351"/>
+</kw>
+<kw name="verificar o Shipping Information" library="Saucedemo_resourses">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='summary_info_label'][contains(.,'Shipping Information:')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:15.352" endtime="20230227 16:19:15.367"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.352" endtime="20230227 16:19:15.367"/>
+</kw>
+<kw name="Verificar item total" library="Saucedemo_resourses">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='summary_subtotal_label'][contains(.,'Item total: $15.99')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:15.368" endtime="20230227 16:19:15.384"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.368" endtime="20230227 16:19:15.384"/>
+</kw>
+<kw name="Verificar Tax" library="Saucedemo_resourses">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='summary_tax_label'][contains(.,'Tax: $1.28')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:15.385" endtime="20230227 16:19:15.402"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.384" endtime="20230227 16:19:15.402"/>
+</kw>
+<kw name="Verificar total" library="Saucedemo_resourses">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='summary_total_label'][contains(.,'Total: $17.27')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:15.403" endtime="20230227 16:19:15.420"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.402" endtime="20230227 16:19:15.420"/>
+</kw>
+<kw name="Clicar em Finish" library="Saucedemo_resourses">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=finish</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230227 16:19:15.421" level="INFO">Clicking element 'finish'.</msg>
+<status status="PASS" starttime="20230227 16:19:15.421" endtime="20230227 16:19:15.463"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.420" endtime="20230227 16:19:15.463"/>
+</kw>
+<kw name="Verificar que seja apresentado checkout complete!" library="Saucedemo_resourses">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[@class='title']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:15.464" endtime="20230227 16:19:15.482"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[@class='title']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230227 16:19:15.482" endtime="20230227 16:19:15.494"/>
+</kw>
+<status status="PASS" starttime="20230227 16:19:15.463" endtime="20230227 16:19:15.494"/>
+</kw>
+<doc>Esse teste verifica os produtos do site Saucedemo.com
+e faz a realização da compra do produto camisa vermelha seguindo todos os passos até que a compra seja finalizada</doc>
+<tag>compra_produtos</tag>
+<tag>finalizar_compra</tag>
+<tag>login</tag>
+<tag>produtos</tag>
+<status status="PASS" starttime="20230227 16:19:13.051" endtime="20230227 16:19:15.495"/>
+</test>
+<doc>Essa suite testa o site Saucedemo.com</doc>
+<status status="PASS" starttime="20230227 16:19:12.865" endtime="20230227 16:19:15.496"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">compra_produtos</stat>
+<stat pass="1" fail="0" skip="0">finalizar_compra</stat>
+<stat pass="1" fail="0" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">produtos</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Saucedemo test">Saucedemo test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
